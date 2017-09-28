@@ -1,0 +1,24 @@
+{
+  "name": "fdh",
+  "main": "FDQ health",
+  "description": "This is a test suite for shared tests between FDO and FDP",
+  "license": "MIT",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qfox/fdh.git"
+  },
+  "scripts": {},
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "sourceMap": true
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "*"
+  },
+  "keywords": [
+    "tests"
+  ]
+}
