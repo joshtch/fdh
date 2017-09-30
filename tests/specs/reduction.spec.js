@@ -1,4 +1,5 @@
 import {verify} from '../../../fdv/verifier';
+import expect from '../../../fdlib/tests/lib/mocha_proxy.fixt';
 
 import {
   INSPECT,
@@ -11,6 +12,14 @@ let ENABLED = false; // Note: adds 4 mins for partial and >30min for complete su
 let PARTIAL = true;
 let MAX_PER_TEST = PARTIAL ? 1 : 200;
 let counter = 0;
+
+if (!ENABLED) {
+  describe('(disabled) reduction.spec', function() {
+    it('should be disabled', function() {
+      expect(ENABLED).to.eql(false); // orly
+    });
+  });
+}
 
 // .skip() causes about a minute overhead
 // the weird structure is just to circumvent linter :)
