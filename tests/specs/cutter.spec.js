@@ -10705,5 +10705,19 @@ describe('fdh/specs/cutter.spec', function() {
 
       verify(dsl);
     });
+
+    it('bad xnor alias in minimizer', function(){
+      verify(`
+        # note: it was important that C was declared after A because of how the alias was declared
+        : A [0,1]
+        : B [0,1]
+        : C [0,0,7,7]
+        : D [0,7]
+        A !^ C
+        B !^ D
+        2 = sum( A B )
+        # minimizer would alias A to C, leaving '2=sum([01][0077])' which cant hold
+      `)
+    })
   });
 });
