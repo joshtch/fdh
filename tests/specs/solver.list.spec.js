@@ -1,10 +1,10 @@
 import {
   verify,
-} from '../../../fdv/verifier';
+} from 'fdv/verifier';
 
 import {
   SUP,
-} from '../../../fdlib/src/helpers';
+} from 'fdlib';
 
 describe('fdh/specs/solver.list.spec', function() {
 

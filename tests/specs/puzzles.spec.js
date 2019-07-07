@@ -1,6 +1,6 @@
-import {verify} from '../../../fdv/verifier';
-import FDO from '../../../fdo/src/fdo';
-import FDP from '../../../fdp/src/fdp';
+import {verify} from 'fdv/verifier';
+import FDO from 'fdo';
+import FDP from 'fdp';
 
 // to analyze
 describe.skip('fdh/puzzles.spec', function() {

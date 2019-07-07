@@ -1,4 +1,4 @@
-import {verify} from '../../../fdv/verifier';
+import {verify} from 'fdv/verifier';
 
 describe('fdh/specs/ml2dsl.spec', function() {
 

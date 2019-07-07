@@ -1,14 +1,12 @@
 import {
   verify,
-} from '../../../fdv/verifier';
+} from 'fdv/verifier';
 
 import {
   SUB,
   SUP,
-} from '../../../fdlib/src/helpers';
-import {
   domain__debug,
-} from '../../../fdlib/src/domain';
+} from 'fdlib';
 
 let INPUT_MAP = {
   bool: {

@@ -1,8 +1,6 @@
 import {
   verify,
-} from '../../../fdv/verifier';
-
-import expect from '../../../fdlib/tests/lib/mocha_proxy.fixt';
+} from 'fdv/verifier';
 
 import {
   LOG_NONE,
@@ -12,7 +10,7 @@ import {
   LOG_MIN,
   SUB,
   SUP,
-} from '../../../fdlib/src/helpers';
+} from 'fdlib';
 
 describe('fdh/specs/solver.spec', function () {
 

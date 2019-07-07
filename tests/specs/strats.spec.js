@@ -1,6 +1,6 @@
 // test various strategies
 
-import {verify} from '../../../fdv/verifier';
+import {verify} from 'fdv/verifier';
 
 describe('fdh/specs/strats.spec', function () {
 

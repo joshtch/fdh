@@ -1,5 +1,4 @@
-import {verify} from '../../../fdv/verifier';
-import expect from '../../../fdlib/tests/lib/mocha_proxy.fixt';
+import {verify} from 'fdv/verifier';
 
 describe('fdh/specs/dsl2ml.spec', function() {
 

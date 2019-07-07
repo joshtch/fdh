@@ -14,7 +14,7 @@
 // - [100 1000]                    (large range far out of bool range)
 // - [100 100 1000 1000]           (large pair range)
 
-import {verify} from '../../../fdv/verifier';
+import {verify} from 'fdv/verifier';
 
 //function generate() {
 //  let doms = [[0, 0], [0, 1], [1, 1], [0, 10], [0, 0, 10, 10], [1, 10], [1, 1, 10, 10], [10, 10], [3, 13], [0, 500], [100, 2000], [100, 100, 2000, 2000]];

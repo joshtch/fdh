@@ -1,7 +1,7 @@
 import {
   verify,
   _verify,
-} from '../../../fdv/verifier';
+} from 'fdv/verifier';
 
 describe('fdh/specs/cutter.spec', function() {
 

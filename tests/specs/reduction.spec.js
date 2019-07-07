@@ -1,9 +1,8 @@
-import {verify} from '../../../fdv/verifier';
-import expect from '../../../fdlib/tests/lib/mocha_proxy.fixt';
+import {verify} from 'fdv/verifier';
 
 import {
   INSPECT,
-} from '../../../fdlib/src/helpers';
+} from 'fdlib';
 
 // the main goal of this file is to check whether constraint pairs with a leaf var are reduced if possible (^ | => ->)
 // the actual outcomes are not very relevant. we prefer to catch a rewrite explicitly but a solve is fine too.
